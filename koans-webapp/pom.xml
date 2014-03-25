@@ -9,7 +9,6 @@
     <artifactId>koans-webapp</artifactId>
     <packaging>war</packaging>
     <name>koans-webapp Maven Webapp</name>
-    <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -20,5 +19,13 @@
     </dependencies>
     <build>
         <finalName>koans-webapp</finalName>
+        <plugins>
+            <plugin>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>1.9.1</version>
+            </plugin>
+        </plugins>
     </build>
+
 </project>
